@@ -1,0 +1,512 @@
+/* Definición de la variable de color */
+:root{
+    --primary-1000: #000;
+    --primary-750: #112322;
+    --primary-500: #326867;
+    --primary-250: #afd8d8;
+    --primary-000: #fff;
+
+    --secondary-1000: #000;
+    --secondary-750: #0f463d;
+    --secondary-500: #2ED2B7;
+    --secondary-250: #b9f0e7;
+    --secondary-000: #fff;
+}
+  
+*{
+    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: regular;
+    font-style: normal;
+    color: var(--primary-000);
+}
+
+body{
+    background: #112322 !important;
+}
+
+/* Estilos para el scroll vertical del navegador */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar */
+}
+
+/* Track (fondo del scrollbar) */
+::-webkit-scrollbar-track {
+    background: var(--primary-750); /* Color de fondo del scrollbar */
+}
+
+/* Handle (barra de desplazamiento) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-500); /* Color de la barra de desplazamiento */
+    border-radius: 5px; /* Radio de borde de la barra de desplazamiento */
+    border: 2px solid var(--primary-750); /* Borde de la barra de desplazamiento */
+}
+
+/* Handle al hacer hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-250); /* Color de la barra de desplazamiento al hacer hover */
+}
+
+
+header{
+    margin: 0px;
+    padding: 0px;
+    height: 236px;
+    border-radius: 0px 0px 400px 400px;
+    background-image: linear-gradient(to right, #135348 0%, #112322 100%);
+}
+
+.menu{
+    text-align: center;
+    padding: 60px;
+    color: var(--primary-000);
+}
+.menu-mobile{
+    display: none;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 50px;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    font-family: "Poppins", sans-serif;
+    font-weight: regular;
+    text-decoration: none;
+    color: var(--primary-000);
+    font-size: 23px;
+}
+
+.menu ul li{
+    transition: transform 0.3s ease-in-out;
+}
+.menu ul li:hover{
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+}
+.menu ul .li-title:hover{
+    transform: scale(1);
+}
+
+.menu ul li .title{
+    font-weight: bold;
+    font-size: 45px;
+}
+.menu ul li .cargo{
+    font-size: 20px;
+    margin-top: -12px;
+}
+.point{
+    font-size: 40px;
+    color: var(--secondary-500);
+}
+
+
+section{
+    padding: 0px 110px;
+    color: var(--primary-000);
+    margin-top: 90px;
+}
+.section-title{
+    color: var(--secondary-500);
+    font-weight: semibold;
+    font-size: 39px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--secondary-500);
+}
+.about-me{
+    height: 380px;
+}
+.about-me .presentacion, .about-me .presentacion-texto{
+    margin-top: 50px;
+}
+.about-me .presentacion h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+.about-me .presentacion h2 span{
+    font-size: 60px;
+}
+.about-me .presentacion h5{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.about-me .presentacion h5 i{
+    color: var(--secondary-500);
+    margin-right: 10px;
+}
+.about-me .botones{
+    margin-top: 40px;
+}
+.about-me .botones button{
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.btn-primario{
+    background-color: var(--primary-500);
+    color: var(--primary-000);
+    padding: 5px 15px;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn-secundario{
+    background-color: var(--secondary-500);
+    color: var(--primary-750);
+    padding: 5px 15px;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn-secundario i{
+    color: var(--primary-750);
+}
+.btn-primario, .btn-secundario{
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-primario i, .btn-secundario i{
+    margin-left: 7px;
+}
+
+.btn-primario:hover{
+    background-color: var(--primary-250);
+    color: var(--primary-750);
+    transition: 0.3s ease-in-out;
+}
+.btn-primario:hover i{
+    color: var(--primary-750);
+    transition: 0.3s ease-in-out;
+}
+.btn-secundario:hover{
+    background-color: var(--secondary-250);
+    color: var(--secondary-750);
+    transition: 0.3s ease-in-out;
+}
+.btn-secundario:hover i{
+    color: var(--secondary-750);
+    transition: 0.3s ease-in-out;
+}
+.btn-primario:active{
+    background-color: var(--primary-750);
+    color: var(--primary-000);
+    transition: 0.3s ease-in-out;
+}
+.btn-secundario:active{
+    background-color: var(--secondary-750);
+    color: var(--secondary-000);
+    transition: 0.3s ease-in-out;
+}
+button.disabled{
+    background-color: #ACACAC;
+    color: #fff;
+}
+
+.about-me .presentacion-texto p{
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.presentacion-texto h4{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.presentacion-texto h5{
+    font-size: 27px;
+    font-weight: bold;
+}
+.skills img{
+    margin-top: 40px;
+}
+.skills .presentacion-img{
+    display: flex;
+    justify-content: center;
+}
+.presentacion-img{
+    justify-content: center;
+}
+.presentacion-texto{
+}
+
+.skills .disenio-img{
+    margin-left: 80px;
+}
+
+.projects .project{
+    margin-top: 50px;
+}
+
+.contact .presentacion, .contact .presentacion-texto{
+    margin-top: 50px;
+}
+.contact .presentacion h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.contact .presentacion h2 span{
+    font-size: 45px;
+}
+.contact .presentacion p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.contact .redes{
+    justify-content: center;
+    align-items: center;
+}
+.contact .redes i{
+    font-size: 60px;
+    margin: 20px;
+    margin-top: 40px;
+    color: var(--secondary-500);
+    transition: transform 0.3s ease-in-out;
+}
+.contact .redes i:hover{
+    color: var(--secondary-250);
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+}
+
+
+footer{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 150px;
+    height: 236px;
+    border-radius: 400px 400px 0px 0px;
+    background-image: linear-gradient(to right, #135348 0%, #112322 100%);
+}
+.footer{
+    text-align: center;
+    padding: 60px;
+    color: var(--primary-000);
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px 50px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    font-family: "Poppins", sans-serif;
+    font-weight: regular;
+    text-decoration: none;
+    color: var(--primary-000);
+    font-size: 23px;
+}
+
+.footer ul li .title{
+    font-weight: light;
+    font-size: 20px;
+}
+.footer .redes{
+    justify-content: center;
+    margin-top: 10px;
+}
+.footer .redes i{
+    font-size: 25px;
+    color: var(--secondary-500);
+    margin: 0px 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.footer .redes i:hover{
+    color: var(--secondary-250);
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+div#loom-companion-mv3{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    body{
+        width: 100%;
+    }
+    header{
+        margin: 0px;
+        padding: 0px;
+        height: 236px;
+        width: 100%;
+        border-radius: 0px 0px 400px 400px;
+    }
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-mobile{
+        text-align: center;
+        padding: 0px;
+        color: var(--primary-000);
+    }
+    .menu-mobile ul{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .menu-mobile ul li{
+        margin: 0px 15px;
+        list-style: none;
+    }
+    .menu-mobile ul li a{
+        font-size: 13px;
+    }
+
+    .div-title{
+        padding-top: 40px;
+    }
+
+    .div-title a{
+        text-decoration: none;
+    }
+
+    .div-title .title{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .div-title .cargo{
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    .point{
+        font-size: 20px;
+        color: var(--secondary-500);
+    }
+
+    section{
+        padding: 0px !important;
+        padding: 20px !important;
+    }
+
+    .presentacion-img img{
+        height: 150px !important;
+        margin: 20px;
+    }
+
+    .section-title{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .about-me{
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .about-me .presentacion, .about-me .presentacion-texto{
+        margin-top: 20px;
+    }
+    .about-me .presentacion h2{
+        font-size: 25px;
+    }
+    .about-me .presentacion h2 span{
+        font-size: 40px;
+    }
+    .about-me .presentacion h5{
+        font-size: 15px;
+    }
+    .about-me .presentacion h5 i{
+        margin-right: 5px;
+    }
+
+    .btn-primario, .btn-secundario{
+        font-size: 15px;
+    }
+    .about-me .botones{
+        justify-content: center;
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .presentacion-texto h4{
+        font-size: 25px;
+    }
+    .presentacion-texto h5{
+        font-size: 18px;
+    }
+
+    .contact .presentacion h2{
+        font-size: 25px;
+    }
+    .contact .presentacion h2 span{
+        font-size: 30px;
+    }
+    .contact .presentacion p{
+        font-size: 15px;
+    }
+    .contact .redes i{
+        font-size: 40px;
+    }
+    
+    footer{
+        margin-top: 50px;
+        height: 200px;
+    }
+    .footer ul li .title{
+        font-size: 13px;
+    }
+    .footer ul{
+        padding: 0px 10px;
+    }
+
+    .lenguajes-img img{
+        height: 250px !important;
+        margin-bottom: 20px !important;
+        margin-top: 20px !important;
+    }
+
+    .projects .project{
+        margin-top: 50px !important;
+    }
+
+    .lenguajes-aprendidos-img, .disenios-aprendidos-img{
+        justify-content: center;
+    }
+
+    .lenguajes-aprendidos-img img, .disenios-aprendidos-img img{
+        height: 150px !important;
+        margin: 10px !important;
+    }
+
+    .lenguajes-aprendidos-img img{
+        margin-left: -40px !important;
+    }
+
+    .disenios-aprendidos-img img{
+        height: 110px !important;
+    }
+}
