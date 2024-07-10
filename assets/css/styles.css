@@ -326,7 +326,9 @@ footer{
     transition: 0.3s ease-in-out;
 }
 
-
+p{
+    text-align: justify;
+}
 
 div#loom-companion-mv3{
     display: none;
